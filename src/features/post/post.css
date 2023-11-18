@@ -1,0 +1,44 @@
+li{
+    list-style: none;
+}
+.post-content{
+    height: 5rem;
+    width: 20rem;
+    border: 2px solid white;
+    background-color: grey;
+    border-radius: 6px;
+}
+h1{
+    margin: 0px;
+    padding: 0px;
+
+}
+.i-container {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+input#postContent {
+    height: 3rem;
+    width: 20rem;
+    border-radius: 6px;
+    
+}
+input#postTitle {
+    height: 1rem;
+    width: 20rem;
+    border-radius: 4px;
+}
+button.s-btn {
+    height: 2rem;
+    width: 15rem;
+    margin-left: 2rem;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+.post-cont{
+    margin-left: 30rem;
+}
+.container{
+    margin-left: 30rem;
+}
