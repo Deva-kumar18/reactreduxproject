@@ -46,7 +46,7 @@ const AddPostForm = () => {
       />
       </div>
       <button type="button" className="s-btn" onClick={onSavePostClicked}>
-        save Post
+        Post
       </button>
     </div>
   );
