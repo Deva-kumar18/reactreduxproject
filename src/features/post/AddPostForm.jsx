@@ -1,12 +1,15 @@
 import React from "react";
 import { useState, useRef } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch,useSelector } from "react-redux";
 import { nanoid } from "@reduxjs/toolkit";
 import { addPost } from "./postSlice";
+
 
 const AddPostForm = () => {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+
+  
 
   const dispatch = useDispatch();
   const onSavePostClicked = () => {
@@ -15,12 +18,15 @@ const AddPostForm = () => {
         addPost(
           title,
           content,
+         
         ),
         setTitle(""),
         setContent("")
       );
     }
   };
+ 
+ 
 
   return (
     <div className="post-cont">
@@ -34,6 +40,7 @@ const AddPostForm = () => {
         onChange={(e) => setTitle(e.target.value)}
         name="postTitle"
       />
+      
       </div>
       <div className="i-container">
       <label htmlFor="postContent">Post Content:</label>
